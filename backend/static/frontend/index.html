@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Attendance Manager</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .employee-row { margin-bottom: 8px; }
+    label { margin-right: 8px; }
+    button { margin: 10px 5px; padding: 8px 16px; }
+  </style>
+</head>
+<body>
+  <h1>Mark Attendance</h1>
+  <div id="attendance-list">Loading...</div>
+
+  <button onclick="saveAttendance()">Save Attendance</button>
+  <button onclick="downloadPdf()">Download Today's PDF</button>
+
+  <h2>Download Monthly Report</h2>
+  <input type="month" id="month-picker" />
+  <button onclick="downloadMonthlyPdf()">Download Monthly PDF</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

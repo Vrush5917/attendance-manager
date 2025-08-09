@@ -1,0 +1,57 @@
+body { 
+  font-family: Arial, Helvetica, sans-serif; 
+  background: #f9f9f9; 
+}
+
+.box { 
+  max-width: 600px; 
+  margin: 40px auto; 
+  padding: 20px; 
+  background: #fff; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05); 
+}
+
+input { 
+  padding: 8px; 
+  width: 70%; 
+  margin-right: 8px; 
+}
+
+button { 
+  padding: 8px 12px; 
+}
+
+ul { 
+  margin: 0; 
+  padding-left: 18px; 
+}
+
+/* Attendance list styles */
+.attendance-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.attendance-list li {
+  padding: 10px 15px;
+  margin-bottom: 6px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Present employees - green background */
+.attendance-list li.present {
+  background-color: #4CAF50; /* Green */
+}
+
+/* Absent employees - red background */
+.attendance-list li.absent {
+  background-color: #F44336; /* Red */
+}
+
